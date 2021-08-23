@@ -10,11 +10,11 @@ This repo provides a very simple example, in a production deployment it can be a
 
 The two supported modes of operation are rewrite and steering.
 
-# Rewrite mode
+## Rewrite mode
 
 <img src="./images/mcgw-rewrite.jpg"/>
 
-# Steering mode
+## Steering mode
 
 <img src="./images/mcgw-steering.jpg"/>
 
