@@ -160,16 +160,11 @@ Location: http://api.mcgw.ff.lan:8080/api/6/http/keyvals/dynamic_loglevel/
 Retrieve currently configured log levels:
 
 ```
-$ curl -ki -X GET https://api.mcgw.ff.lan/api/6/http/keyvals/dynamic_loglevel
-HTTP/2 200 
-server: nginx/1.21.3
-date: Wed, 09 Mar 2022 09:56:03 GMT
-content-type: application/json
-content-length: 65
-expires: Thu, 01 Jan 1970 00:00:01 GMT
-cache-control: no-cache
-
-{"api.ff.lan:/getmyip":"full","api.ff.lan:/getmyip/json":"basic"}
+$ curl -ks -X GET https://api.mcgw.ff.lan/api/6/http/keyvals/dynamic_loglevel | jq
+{
+  "api.ff.lan:/getmyip": "full",
+  "api.ff.lan:/getmyip/json": "basic"
+}
 ```
 
 ## Multicloud Gateway testing
