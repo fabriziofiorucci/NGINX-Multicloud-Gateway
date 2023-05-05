@@ -14,7 +14,7 @@ data:
       var rUri=r.uri;
 
       r.warn('------------------------------');
-      r.warn('Client['+r.remoteAddress+'] Method['+r.method+'] Host['+rHost+'] URI['+rUri+'] QueryString['+r.variables.query_string+'] Body['+r.requestBody+']');
+      r.warn('Client['+r.remoteAddress+'] Method['+r.method+'] Host['+rHost+'] URI['+rUri+'] QueryString['+r.variables.query_string+'] Body['+r.requestText+']');
 
       // Queries the backend db
       r.subrequest('/dbQuery/'+dbBucket+'?fqdn='+rHost+'&uri='+rUri,'',subReqCallback);
